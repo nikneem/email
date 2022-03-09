@@ -74,7 +74,7 @@ namespace HexMaster.Email.DomainModels
         {
             return JsonSerializer.Serialize(this);
         }
-        public async Task<Stream> SerializeToStream()
+        public async Task<Stream> SerializeToStreamAsync()
         {
             var json = SerializeToJson();
             var memoryStream = new MemoryStream();
@@ -95,7 +95,7 @@ namespace HexMaster.Email.DomainModels
 
             throw new LoadFromJsonFailedException();
         }
-        public static async Task<Message> FromStream(Stream input)
+        public static async Task<Message> FromStreamAsync(Stream input)
         {
             if (input.CanRead && input.CanSeek)
             {
