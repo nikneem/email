@@ -74,13 +74,14 @@ namespace HexMaster.Email.DomainModels
         {
             return JsonSerializer.Serialize(this);
         }
-        public async Task<Stream> SerializeToStream()
+        public async Task<Stream> SerializeToStreamAsync()
         {
             var json = SerializeToJson();
             var memoryStream = new MemoryStream();
             var streamWriter = new StreamWriter(memoryStream);
 
             await streamWriter.WriteAsync(json);
+            await streamWriter.FlushAsync();
             memoryStream.Seek(0, SeekOrigin.Begin);
             return memoryStream;
         }
@@ -95,7 +96,7 @@ namespace HexMaster.Email.DomainModels
 
             throw new LoadFromJsonFailedException();
         }
-        public static async Task<Message> FromStream(Stream input)
+        public static async Task<Message> FromStreamAsync(Stream input)
         {
             if (input.CanRead && input.CanSeek)
             {
