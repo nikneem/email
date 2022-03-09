@@ -2,6 +2,9 @@
 {
     public class EmailOptions
     {
+
+        public const string SectionName = "EmailService";
+
         public string SmtpHost { get; set; } = default!;
         public int? SmtpPort{ get; set; }
         public bool? UseSsl { get; set; }
