@@ -16,7 +16,7 @@ namespace HexMaster.Email.Services
     {
         private readonly IOptions<EmailOptions> _options;
         private readonly ILogger<MailService> _logger;
-        private Lazy<SmtpClient> _client;
+        private readonly Lazy<SmtpClient> _client;
 
         public async Task SendAsync(Message mail)
         {
