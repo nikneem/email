@@ -12,7 +12,7 @@ public class SerializationTests
     {
         var substitutions = new Dictionary<string, string> { { "x", "y" } };
         var recipient = Recipient.Create("info@hexmaster.nl", substitutions: substitutions);
-        var sender = new Sender("sender@domain.com");
+        var sender =  new Sender("sender@domain.com");
         var body = new Body("default", "Hi there");
         var mailMessage = new Message(sender,  recipient , "Subject", body);
 
