@@ -30,7 +30,6 @@ public class ValidEmailAddressTests
     public void WhenEmailAddressIsInvalid_ItThrowsInvalidEmailAddressException(string emailAddress)
     {
         var exception = Assert.Throws<InvalidEmailAddressException>(() => Recipient.Create(emailAddress));
-         Assert.True(exception.Message.Contains(emailAddress));
-
+        Assert.Contains(emailAddress,exception.Message);
     }
 }
