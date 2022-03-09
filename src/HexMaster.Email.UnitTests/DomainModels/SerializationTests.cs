@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
 using HexMaster.Email.DomainModels;
@@ -32,8 +33,10 @@ public class SerializationTests
         var body = new Body("default", "Hi there");
         var mailMessage = new Message(sender, recipient, "Subject", body);
 
-        var serialized = await mailMessage.SerializeToStreamAsync();
-        var restoredObject = await Message.FromStreamAsync(serialized);
+        var s = File.OpenRead("C:\\Users\\EduardKeilholz\\Downloads\\some.mail");
+
+//        var serialized = await mailMessage.SerializeToStreamAsync();
+        var restoredObject = await Message.FromStreamAsync(s);
 
         Assert.Equal(mailMessage.Subject, restoredObject.Subject);
     }
