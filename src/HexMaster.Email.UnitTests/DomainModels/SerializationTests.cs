@@ -33,10 +33,8 @@ public class SerializationTests
         var body = new Body("default", "Hi there");
         var mailMessage = new Message(sender, recipient, "Subject", body);
 
-        var s = File.OpenRead("C:\\Users\\EduardKeilholz\\Downloads\\some.mail");
-
-//        var serialized = await mailMessage.SerializeToStreamAsync();
-        var restoredObject = await Message.FromStreamAsync(s);
+        var serialized = await mailMessage.SerializeToStreamAsync();
+        var restoredObject = await Message.FromStreamAsync(serialized);
 
         Assert.Equal(mailMessage.Subject, restoredObject.Subject);
     }
