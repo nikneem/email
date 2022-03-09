@@ -4,6 +4,13 @@
     <TargetFrameworks>net6.0;net5.0</TargetFrameworks>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Authors>Eduard Keilholz</Authors>
+    <Description>A convenient package to simplify sending emails and email batches through your software</Description>
+    <Copyright>2022</Copyright>
+    <PackageProjectUrl>https://github.com/nikneem/email</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nikneem/email</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>mail;email;dispatch;send;bulk</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
