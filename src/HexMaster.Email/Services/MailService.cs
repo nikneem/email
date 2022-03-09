@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Net.Mime;
 using System.Threading.Tasks;
+using HexMaster.Email.Abstractions.Services;
 using HexMaster.Email.Configuration;
 using HexMaster.Email.DomainModels;
 using HexMaster.Email.Exceptions;
@@ -12,9 +13,8 @@ using Microsoft.Extensions.Options;
 
 namespace HexMaster.Email.Services
 {
-    public class MailService
+    public class MailService:IMailService
     {
-        private readonly IOptions<EmailOptions> _options;
         private readonly ILogger<MailService> _logger;
         private readonly Lazy<SmtpClient> _client;
 
@@ -106,9 +106,8 @@ namespace HexMaster.Email.Services
 
         public MailService(IOptions<EmailOptions> options, ILogger<MailService> logger)
         {
-            _options = options;
             _logger = logger;
-            _client = new Lazy<SmtpClient>(() => CreateClient(_options));
+            _client = new Lazy<SmtpClient>(() => CreateClient(options));
         }
     }
 }

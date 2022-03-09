@@ -8,6 +8,6 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=nikneem_email&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=nikneem_email)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=nikneem_email&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=nikneem_email)
 
-# email
+# Email Library
 
-This is a c# email library
+This is a .NET 5 and 6 NuGet package that abstracts sending mail messages for you. You can create message definitions with multiple recipients and add substitution fields for each recipient.
