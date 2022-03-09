@@ -59,6 +59,7 @@ namespace HexMaster.Email.Services
                     {
                         _logger.LogInformation("Composing mail for recipient {recipient} complete, now attempting to send", recipient.EmailAddress);
                         await _client.Value.SendMailAsync(mailMessage);
+                        recipient.Completed();
                     }
                     catch (Exception ex)
                     {

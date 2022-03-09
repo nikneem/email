@@ -2,25 +2,16 @@
 using HexMaster.Email.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 
 namespace HexMaster.Email.Configuration
 {
-
     public static class ServiceCollectionExtensions
     {
 
-        public static void ConfigureEmailService(this IServiceCollection serviceCollection)
+        public static void ConfigureEmailService(this IServiceCollection serviceCollection, IConfigurationSection section)
         {
-
-            var configuration = serviceCollection
-                .BuildServiceProvider()
-                .GetService<IConfiguration>();
-
-            serviceCollection.Configure<EmailOptions>(configuration);
-
+            serviceCollection.Configure<EmailOptions>(section);
             serviceCollection.AddScoped<IMailService, MailService>();
-
         }
     }
 }

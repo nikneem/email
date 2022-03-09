@@ -10,4 +10,4 @@
 
 # Email Library
 
-This is a .NET 5 and 6 NuGet package that abstracts sending mail messages for you. You can create message definitions with multiple recipients and add substitution fields for each recipient.
+This is a .NET 5 and 6 NuGet package that abstracts sending mail messages for you. You can create message definitions with multiple recipients and add substitution fields for each recipient
