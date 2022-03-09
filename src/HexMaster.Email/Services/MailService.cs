@@ -65,6 +65,7 @@ namespace HexMaster.Email.Services
                     {
                         recipient.SetError(ex.Message);
                         _logger.LogWarning(ex, "Sending mail to recipient {recipient} failed", recipient.EmailAddress);
+                        throw;
                     }
                 }
             }
