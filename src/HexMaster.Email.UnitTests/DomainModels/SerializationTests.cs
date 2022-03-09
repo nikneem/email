@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json;
+using System.Threading.Tasks;
 using HexMaster.Email.DomainModels;
 using Xunit;
 
@@ -8,7 +9,7 @@ namespace HexMaster.Email.UnitTests.DomainModels;
 public class SerializationTests
 {
     [Fact]
-    public void WhenEmailMessageIsSerialized_ItCanBeRecreated()
+    public void WhenEmailMessageIsJsonSerialized_ItCanBeRecreated()
     {
         var substitutions = new Dictionary<string, string> { { "x", "y" } };
         var recipient = Recipient.Create("info@hexmaster.nl", substitutions: substitutions);
@@ -20,8 +21,23 @@ public class SerializationTests
         var restoredObject = Message.FromJson(serialized);
 
         Assert.Equal(mailMessage.Subject, restoredObject.Subject);
-
     }
+
+    [Fact]
+    public async Task WhenEmailMessageIsStreamSerialized_ItCanBeRecreated()
+    {
+        var substitutions = new Dictionary<string, string> { { "x", "y" } };
+        var recipient = Recipient.Create("info@hexmaster.nl", substitutions: substitutions);
+        var sender = new Sender("sender@domain.com");
+        var body = new Body("default", "Hi there");
+        var mailMessage = new Message(sender, recipient, "Subject", body);
+
+        var serialized = await mailMessage.SerializeToStreamAsync();
+        var restoredObject = await Message.FromStreamAsync(serialized);
+
+        Assert.Equal(mailMessage.Subject, restoredObject.Subject);
+    }
+
 
     [Fact]
     public void WhenSubstitutionIsSerialized_ItCanBeDeserialized()
