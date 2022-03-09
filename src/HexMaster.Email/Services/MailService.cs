@@ -104,7 +104,6 @@ namespace HexMaster.Email.Services
             return subtitutedContent;
         }
 
-
         public MailService(IOptions<EmailOptions> options, ILogger<MailService> logger)
         {
             _options = options;

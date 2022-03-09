@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HexMaster.Email", "HexMaster.Email\HexMaster.Email.csproj", "{C0E8A02A-1474-44AB-B4ED-FAE641A05555}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexMaster.Email.UnitTests", "HexMaster.Email.UnitTests\HexMaster.Email.UnitTests.csproj", "{611B2E2D-DA68-4D12-8175-BE8A7F883044}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HexMaster.Email.UnitTests", "HexMaster.Email.UnitTests\HexMaster.Email.UnitTests.csproj", "{611B2E2D-DA68-4D12-8175-BE8A7F883044}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
