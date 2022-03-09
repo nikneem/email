@@ -16,6 +16,7 @@ namespace HexMaster.Email.DomainModels
         public int Attempts { get; private set; }
         public bool IsCompleted { get; private set; }
         public bool IsFailed { get; private set; }
+        public string? LatestError { get; private set; }
         public IReadOnlyCollection<Substitution> Substitutions => _substitutions.AsReadOnly();
 
         public void SetEmailAddress(string value)
@@ -46,6 +47,11 @@ namespace HexMaster.Email.DomainModels
             }
 
             _substitutions.Add(value);
+        }
+
+        public void SetError(string value)
+        {
+            LatestError = value;
         }
 
         internal void Attempt()
