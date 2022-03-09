@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HexMaster.Email", "HexMaster.Email\HexMaster.Email.csproj", "{C0E8A02A-1474-44AB-B4ED-FAE641A05555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexMaster.Email.UnitTests", "HexMaster.Email.UnitTests\HexMaster.Email.UnitTests.csproj", "{611B2E2D-DA68-4D12-8175-BE8A7F883044}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0E8A02A-1474-44AB-B4ED-FAE641A05555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E8A02A-1474-44AB-B4ED-FAE641A05555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E8A02A-1474-44AB-B4ED-FAE641A05555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E8A02A-1474-44AB-B4ED-FAE641A05555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{611B2E2D-DA68-4D12-8175-BE8A7F883044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611B2E2D-DA68-4D12-8175-BE8A7F883044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611B2E2D-DA68-4D12-8175-BE8A7F883044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611B2E2D-DA68-4D12-8175-BE8A7F883044}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0103C4AA-0494-4A0A-A971-15D32AD8844A}
+	EndGlobalSection
+EndGlobal
