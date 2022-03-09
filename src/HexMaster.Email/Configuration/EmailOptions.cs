@@ -2,7 +2,7 @@
 {
     public class EmailOptions
     {
-        public string SmtpHost { get; set; }
+        public string SmtpHost { get; set; } = default!;
         public int? SmtpPort{ get; set; }
         public bool? UseSsl { get; set; }
         public string? Username { get; set; }
