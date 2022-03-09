@@ -77,8 +77,8 @@ namespace HexMaster.Email.DomainModels
         public async Task<Stream> SerializeToStream()
         {
             var json = SerializeToJson();
-            await using var memoryStream = new MemoryStream();
-            await using var streamWriter = new StreamWriter(memoryStream);
+            var memoryStream = new MemoryStream();
+            var streamWriter = new StreamWriter(memoryStream);
 
             await streamWriter.WriteAsync(json);
             memoryStream.Seek(0, SeekOrigin.Begin);
