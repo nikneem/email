@@ -28,7 +28,7 @@ jobs:
         run: dotnet sonarscanner begin /k:"nikneem_email" /s:"${{ github.workspace }}\SonarQube.Analysis.xml" /d:sonar.login=${{ secrets.SONAR_TOKEN }} /o:nikneem
 
       - name: Buid Release
-        run: dotnet build src/Email.sln -c Release
+        run: dotnet build src/Email.sln -c Release --no-restore
 
       - name: Execute unit tests
         run: dotnet test src/Email.sln -c Release --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger trx
