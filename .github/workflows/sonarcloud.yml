@@ -31,7 +31,7 @@ jobs:
         run: dotnet build src/Email.sln -c Release
 
       - name: Execute unit tests
-        run: dotnet test src/Email.sln --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger trx
+        run: dotnet test src/Email.sln -c Release --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger trx
 
       - name: End SonarQube scanner and publish results
         run: dotnet sonarscanner end /d:sonar.login=${{ secrets.SONAR_TOKEN }}
