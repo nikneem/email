@@ -34,14 +34,11 @@ jobs:
       #     key: ${{ runner.os }}-sonar-scanner
       #     restore-keys: ${{ runner.os }}-sonar-scanner
 
-      - name: Restore packages
-        run: dotnet restore src/Email.sln -nologo
-
       - name: Install SonarQube tool
         run: dotnet tool update dotnet-sonarscanner --global
 
       - name: Begin SonarQube Scanner
-        run: dotnet sonarscanner begin /k:"nikneem_email" /s:"$GITHUB_WORKSPACE/SonarQube.Analysis.xml" /d:sonar.login=${{ secrets.SONAR_TOKEN }} /o:nikneem
+        run: dotnet sonarscanner begin /k:"nikneem_email" /s:$GITHUB_WORKSPACE/SonarQube.Analysis.xml /d:sonar.login=${{ secrets.SONAR_TOKEN }} /o:nikneem
 
       - name: Buid Release
         run: dotnet build src/Email.sln -c Release
