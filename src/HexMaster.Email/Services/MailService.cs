@@ -27,7 +27,7 @@ namespace HexMaster.Email.Services
             _logger.LogInformation("Starting to send mail batch of mail with subject {subject}", mail.Subject);
             try
             {
-                while (mail.Recipients.Count(r => !r.IsCompleted && !r.IsFailed) > 0)
+                while (mail.Recipients.Any(r => !r.IsCompleted && !r.IsFailed) )
                 {
                     var recipient = mail.Recipients.OrderBy(r=> r.Attempts).First(r => !r.IsCompleted && !r.IsFailed);
                     recipient.Attempt();

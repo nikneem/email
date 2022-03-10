@@ -12,8 +12,8 @@ namespace HexMaster.Email.DomainModels
     public class Message
     {
 
-        private List<Recipient> _recipients;
-        private List<Body> _bodies;
+        private readonly List<Recipient> _recipients;
+        private readonly List<Body> _bodies;
         public string Subject { get; private set; }
         public Sender Sender { get; private set; }
         public IReadOnlyCollection<Recipient> Recipients => _recipients.AsReadOnly();

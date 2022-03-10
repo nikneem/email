@@ -2,6 +2,7 @@
 
 namespace HexMaster.Email.Exceptions
 {
+    [Serializable]
     public class RecipientAlreadyExistsException : Exception
     {
         internal RecipientAlreadyExistsException(string email) : base(

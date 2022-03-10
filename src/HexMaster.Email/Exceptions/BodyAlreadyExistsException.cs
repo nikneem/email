@@ -2,6 +2,7 @@
 
 namespace HexMaster.Email.Exceptions
 {
+    [Serializable]
     public class BodyAlreadyExistsException : Exception
     {
         internal BodyAlreadyExistsException(string name) : base(
