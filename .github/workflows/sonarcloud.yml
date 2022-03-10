@@ -45,7 +45,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"nikneem_email" /o:"nikneem" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /s:"SonarQube.Analysis.xml"
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"nikneem_email" /o:"nikneem" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /s:$GITHUB_WORKSPACE/SonarQube.Analysis.xml
           dotnet build src/Email.sln
           dotnet test src/Email.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger trx
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
