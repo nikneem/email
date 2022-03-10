@@ -30,6 +30,9 @@ jobs:
         run: dotnet tool update dotnet-sonarscanner --global
 
       - name: Begin SonarQube Scanner
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: dotnet sonarscanner begin /k:"nikneem_email" /s:"${{ github.workspace }}\SonarQube.Analysis.xml" /d:sonar.login=${{ secrets.SONAR_TOKEN }} /o:nikneem
 
       - name: Buid Release
@@ -39,4 +42,7 @@ jobs:
         run: dotnet test src/Email.sln -c Release --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --logger trx
 
       - name: End SonarQube scanner and publish results
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: dotnet sonarscanner end /d:sonar.login=${{ secrets.SONAR_TOKEN }}
