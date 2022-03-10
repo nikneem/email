@@ -1,0 +1,1204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession>
+  <Summary numSequencePoints="232" visitedSequencePoints="103" numBranchPoints="54" visitedBranchPoints="12" sequenceCoverage="44.39" branchCoverage="22.22" maxCyclomaticComplexity="114" minCyclomaticComplexity="114" visitedClasses="8" numClasses="19" visitedMethods="37" numMethods="76" />
+  <Modules>
+    <Module hash="8B04D4C5-17C7-4474-A001-19AC3521AD28">
+      <ModulePath>HexMaster.Email.dll</ModulePath>
+      <ModuleTime>2022-03-10T09:57:49</ModuleTime>
+      <ModuleName>HexMaster.Email</ModuleName>
+      <Files>
+        <File uid="1" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\Services\MailService.cs" />
+        <File uid="2" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\Exceptions\BodyAlreadyExistsException.cs" />
+        <File uid="3" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\Exceptions\InvalidEmailAddressException.cs" />
+        <File uid="4" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\Exceptions\LoadFromJsonFailedException.cs" />
+        <File uid="5" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\Exceptions\LoadFromStreamFailedException.cs" />
+        <File uid="6" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\Exceptions\MailMessageInvalidException.cs" />
+        <File uid="7" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\Exceptions\RecipientAlreadyExistsException.cs" />
+        <File uid="8" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\Exceptions\SubstitutionAlreadyExistsException.cs" />
+        <File uid="9" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\DomainModels\Body.cs" />
+        <File uid="10" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\DomainModels\Message.cs" />
+        <File uid="11" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\DomainModels\Recipient.cs" />
+        <File uid="12" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\DomainModels\Sender.cs" />
+        <File uid="13" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\DomainModels\Substitution.cs" />
+        <File uid="14" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\Configuration\EmailOptions.cs" />
+        <File uid="15" fullPath="D:\Projects\github.com\nikneem\email\src\HexMaster.Email\Configuration\ServiceCollectionExtensions.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="18" visitedSequencePoints="0" numBranchPoints="10" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="8" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="3" />
+          <FullName>HexMaster.Email.Services.MailService</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="8" nPathComplexity="8" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="10" visitedSequencePoints="0" numBranchPoints="8" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="8" minCyclomaticComplexity="8" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Net.Mail.SmtpClient HexMaster.Email.Services.MailService::CreateClient(Microsoft.Extensions.Options.IOptions`1&lt;HexMaster.Email.Configuration.EmailOptions&gt;)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="80" ordinal="0" sl="80" sc="1" el="80" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="81" ordinal="1" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="82" ordinal="2" sl="82" sc="1" el="82" ec="2" bec="2" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="84" ordinal="3" sl="84" sc="1" el="84" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="87" ordinal="4" sl="87" sc="1" el="87" ec="2" bec="2" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="89" ordinal="5" sl="89" sc="1" el="89" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="92" ordinal="6" sl="92" sc="1" el="92" ec="2" bec="4" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="93" ordinal="7" sl="93" sc="1" el="93" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="95" ordinal="8" sl="95" sc="1" el="95" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="97" ordinal="9" sl="97" sc="1" el="97" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="82" ordinal="0" path="0" offset="33" offsetend="35" sl="82" fileid="1" />
+                <BranchPoint vc="0" uspid="82" ordinal="1" path="1" offset="33" offsetend="55" sl="82" fileid="1" />
+                <BranchPoint vc="0" uspid="87" ordinal="2" path="0" offset="69" offsetend="71" sl="87" fileid="1" />
+                <BranchPoint vc="0" uspid="87" ordinal="3" path="1" offset="69" offsetend="91" sl="87" fileid="1" />
+                <BranchPoint vc="0" uspid="92" ordinal="4" path="0" offset="102" offsetend="104" sl="92" fileid="1" />
+                <BranchPoint vc="0" uspid="92" ordinal="5" path="1" offset="102" offsetend="117" sl="92" fileid="1" />
+                <BranchPoint vc="0" uspid="92" ordinal="6" path="0" offset="115" offsetend="117" sl="92" fileid="1" />
+                <BranchPoint vc="0" uspid="92" ordinal="7" path="1" offset="115" offsetend="140" sl="92" fileid="1" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="80" ec="1" el="97" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.Services.MailService::SubstituteSubjectTokens(System.String,HexMaster.Email.DomainModels.Recipient)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="101" ordinal="0" sl="101" sc="1" el="101" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="102" ordinal="1" sl="102" sc="1" el="102" ec="2" bec="2" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="104" ordinal="2" sl="104" sc="1" el="104" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="107" ordinal="3" sl="107" sc="1" el="107" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="102" ordinal="1" path="1" offset="48" offsetend="16" sl="102" fileid="1" />
+                <BranchPoint vc="0" uspid="102" ordinal="0" path="0" offset="48" offsetend="50" sl="102" fileid="1" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="101" ec="1" el="107" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.Services.MailService::.ctor(Microsoft.Extensions.Options.IOptions`1&lt;HexMaster.Email.Configuration.EmailOptions&gt;,Microsoft.Extensions.Logging.ILogger`1&lt;HexMaster.Email.Services.MailService&gt;)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="110" ordinal="0" sl="110" sc="1" el="110" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="112" ordinal="1" sl="112" sc="1" el="112" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="113" ordinal="2" sl="113" sc="1" el="113" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="114" ordinal="3" sl="114" sc="1" el="114" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="110" ec="1" el="114" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="4" />
+          <FullName>HexMaster.Email.Services.MailService/&lt;&gt;c</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 HexMaster.Email.Services.MailService/&lt;&gt;c::&lt;SendAsync&gt;b__2_1(HexMaster.Email.DomainModels.Recipient)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="32" ordinal="0" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="32" ec="1" el="32" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean HexMaster.Email.Services.MailService/&lt;&gt;c::&lt;SendAsync&gt;b__2_3(HexMaster.Email.DomainModels.Body)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="47" ordinal="0" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="47" ec="1" el="47" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean HexMaster.Email.Services.MailService/&lt;&gt;c::&lt;SendAsync&gt;b__2_4(HexMaster.Email.DomainModels.Body)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="51" ordinal="0" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="51" ec="1" el="51" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean HexMaster.Email.Services.MailService/&lt;&gt;c::&lt;SendAsync&gt;b__2_0(HexMaster.Email.DomainModels.Recipient)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="30" ordinal="0" sl="30" sc="1" el="30" ec="2" bec="2" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="30" ordinal="0" path="0" offset="6" offsetend="8" sl="30" fileid="1" />
+                <BranchPoint vc="0" uspid="30" ordinal="1" path="1" offset="6" offsetend="18" sl="30" fileid="1" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="30" ec="1" el="30" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="28" visitedSequencePoints="0" numBranchPoints="10" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="10" minCyclomaticComplexity="10" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>HexMaster.Email.Services.MailService/&lt;SendAsync&gt;d__2</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="10" nPathComplexity="10" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="28" visitedSequencePoints="0" numBranchPoints="10" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="10" minCyclomaticComplexity="10" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.Services.MailService/&lt;SendAsync&gt;d__2::MoveNext()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="23" ordinal="0" sl="23" sc="1" el="23" ec="2" bec="2" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="25" ordinal="1" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="27" ordinal="2" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="33" ordinal="3" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="35" ordinal="4" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="37" ordinal="5" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="38" ordinal="6" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="39" ordinal="7" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="40" ordinal="8" sl="40" sc="1" el="40" ec="2" bec="2" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="42" ordinal="9" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="45" ordinal="10" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="48" ordinal="11" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="49" ordinal="12" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="53" ordinal="13" sl="53" sc="1" el="53" ec="2" bec="2" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="54" ordinal="14" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="55" ordinal="15" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="60" ordinal="16" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="61" ordinal="17" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="62" ordinal="18" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="63" ordinal="19" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="64" ordinal="20" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="66" ordinal="21" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="67" ordinal="22" sl="67" sc="1" el="67" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="68" ordinal="23" sl="68" sc="1" el="68" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="70" ordinal="24" sl="70" sc="1" el="70" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="71" ordinal="25" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="74" ordinal="26" sl="74" sc="1" el="74" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="76" ordinal="27" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="23" ordinal="0" path="0" offset="28" offsetend="30" sl="23" fileid="1" />
+                <BranchPoint vc="0" uspid="23" ordinal="1" path="1" offset="28" offsetend="36" sl="23" fileid="1" />
+                <BranchPoint vc="0" uspid="30" ordinal="9" path="1" offset="872" offsetend="84" sl="30" fileid="1" />
+                <BranchPoint vc="0" uspid="40" ordinal="2" path="0" offset="313" offsetend="315" sl="40" fileid="1" />
+                <BranchPoint vc="0" uspid="40" ordinal="3" path="1" offset="313" offsetend="342" sl="40" fileid="1" />
+                <BranchPoint vc="0" uspid="51" ordinal="7" path="1" offset="580" offsetend="512" sl="51" fileid="1" />
+                <BranchPoint vc="0" uspid="53" ordinal="4" path="0" offset="525" offsetend="527" sl="53" fileid="1" />
+                <BranchPoint vc="0" uspid="53" ordinal="5" path="1" offset="525" offsetend="534" sl="53" fileid="1" />
+                <BranchPoint vc="0" uspid="51" ordinal="6" path="0" offset="580" offsetend="582" sl="51" fileid="1" />
+                <BranchPoint vc="0" uspid="30" ordinal="8" path="0" offset="872" offsetend="877" sl="30" fileid="1" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="23" ec="1" el="76" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>HexMaster.Email.Exceptions.BodyAlreadyExistsException</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.Exceptions.BodyAlreadyExistsException::.ctor(System.String)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="9" ordinal="1" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="12" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>HexMaster.Email.Exceptions.InvalidEmailAddressException</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.Exceptions.InvalidEmailAddressException::.ctor(System.String,System.Exception)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="6" uspid="9" ordinal="1" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="6" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="12" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>HexMaster.Email.Exceptions.LoadFromJsonFailedException</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.Exceptions.LoadFromJsonFailedException::.ctor(System.Exception)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="11" ordinal="1" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="11" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>HexMaster.Email.Exceptions.LoadFromStreamFailedException</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.Exceptions.LoadFromStreamFailedException::.ctor(System.Exception)</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="11" ordinal="1" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="11" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>HexMaster.Email.Exceptions.MailMessageInvalidException</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.Exceptions.MailMessageInvalidException::.ctor()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="10" ordinal="1" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="10" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>HexMaster.Email.Exceptions.RecipientAlreadyExistsException</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.Exceptions.RecipientAlreadyExistsException::.ctor(System.String)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="9" ordinal="1" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="12" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>HexMaster.Email.Exceptions.SubstitutionAlreadyExistsException</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.Exceptions.SubstitutionAlreadyExistsException::.ctor(System.String)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="10" ordinal="1" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="10" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="19" visitedSequencePoints="12" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="63.15" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="6" numMethods="9" />
+          <FullName>HexMaster.Email.DomainModels.Body</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Body::get_Name()</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Body::get_Content()</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="10" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean HexMaster.Email.DomainModels.Body::get_IsHtml()</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean HexMaster.Email.DomainModels.Body::get_IsDefault()</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Body::SetName(System.String)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="16" ec="1" el="17" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Body::SetContent(System.String)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="20" ec="1" el="22" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Body::SetDefault(System.Boolean)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="25" ec="1" el="26" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean HexMaster.Email.DomainModels.Body::ContentIsHtml()</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="30" ordinal="0" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="31" ordinal="1" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="2" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="30" ec="1" el="31" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Body::.ctor(System.String,System.String,System.Boolean)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="34" ordinal="0" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="36" ordinal="1" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="37" ordinal="2" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="38" ordinal="3" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="39" ordinal="4" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="40" ordinal="5" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="34" ec="1" el="40" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="45" visitedSequencePoints="20" numBranchPoints="8" visitedBranchPoints="1" sequenceCoverage="44.44" branchCoverage="12.5" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="8" numMethods="16" />
+          <FullName>HexMaster.Email.DomainModels.Message</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Message::get_Subject()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="10" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="17" ec="1" el="17" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>HexMaster.Email.DomainModels.Sender HexMaster.Email.DomainModels.Message::get_Sender()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="18" ec="1" el="18" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IReadOnlyCollection`1&lt;HexMaster.Email.DomainModels.Recipient&gt; HexMaster.Email.DomainModels.Message::get_Recipients()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="19" ec="1" el="19" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IReadOnlyCollection`1&lt;HexMaster.Email.DomainModels.Body&gt; HexMaster.Email.DomainModels.Message::get_Bodies()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="20" ec="1" el="20" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message::SetSubject(System.String)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="25" ordinal="1" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="24" ec="1" el="25" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message::AddRecipient(HexMaster.Email.DomainModels.Recipient)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="29" ordinal="0" sl="29" sc="1" el="29" ec="2" bec="2" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="31" ordinal="1" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="33" ordinal="2" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="34" ordinal="3" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="29" ordinal="0" path="0" offset="36" offsetend="38" sl="29" fileid="10" />
+                <BranchPoint vc="0" uspid="29" ordinal="1" path="1" offset="36" offsetend="55" sl="29" fileid="10" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="29" ec="1" el="34" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message::RemoveRecipient(HexMaster.Email.DomainModels.Recipient)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="37" ordinal="0" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="38" ordinal="1" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="37" ec="1" el="38" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message::RemoveRecipient(System.String)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="41" ordinal="0" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="42" ordinal="1" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="41" ec="1" el="42" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="4" nPathComplexity="4" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message::AddBody(HexMaster.Email.DomainModels.Body)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="46" ordinal="0" sl="46" sc="1" el="46" ec="2" bec="2" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="48" ordinal="1" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="50" ordinal="2" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="51" ordinal="3" sl="51" sc="1" el="51" ec="2" bec="2" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="53" ordinal="4" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="55" ordinal="5" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="46" ordinal="0" path="0" offset="36" offsetend="38" sl="46" fileid="10" />
+                <BranchPoint vc="0" uspid="46" ordinal="1" path="1" offset="36" offsetend="55" sl="46" fileid="10" />
+                <BranchPoint vc="0" uspid="51" ordinal="2" path="0" offset="84" offsetend="86" sl="51" fileid="10" />
+                <BranchPoint vc="0" uspid="51" ordinal="3" path="1" offset="84" offsetend="98" sl="51" fileid="10" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="46" ec="1" el="55" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message::RemoveBody(HexMaster.Email.DomainModels.Body)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="58" ordinal="0" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="59" ordinal="1" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="9" offset="9" sc="0" sl="58" ec="1" el="59" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message::RemoveBody(System.String)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="62" ordinal="0" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="63" ordinal="1" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="10" offset="10" sc="0" sl="62" ec="1" el="63" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean HexMaster.Email.DomainModels.Message::IsValid()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="67" ordinal="0" sl="67" sc="1" el="67" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="68" ordinal="1" sl="68" sc="1" el="68" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="69" ordinal="2" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="70" ordinal="3" sl="70" sc="1" el="70" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="11" offset="11" sc="0" sl="67" ec="1" el="70" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Message::SerializeToJson()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="75" ordinal="0" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="12" offset="12" sc="0" sl="75" ec="1" el="75" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="75" branchCoverage="50" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="3" numBranchPoints="2" visitedBranchPoints="1" sequenceCoverage="75" branchCoverage="50" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>HexMaster.Email.DomainModels.Message HexMaster.Email.DomainModels.Message::FromJson(System.String)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="91" ordinal="0" sl="91" sc="1" el="91" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="2" uspid="92" ordinal="1" sl="92" sc="1" el="92" ec="2" bec="2" bev="1" fileid="10" />
+                <SequencePoint vc="2" uspid="94" ordinal="2" sl="94" sc="1" el="94" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="97" ordinal="3" sl="97" sc="1" el="97" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="2" uspid="92" ordinal="0" path="0" offset="9" offsetend="11" sl="92" fileid="10" />
+                <BranchPoint vc="0" uspid="92" ordinal="1" path="1" offset="9" offsetend="13" sl="92" fileid="10" />
+              </BranchPoints>
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="13" offset="13" sc="0" sl="91" ec="1" el="97" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message::.ctor(HexMaster.Email.DomainModels.Sender,HexMaster.Email.DomainModels.Recipient,System.String,HexMaster.Email.DomainModels.Body)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="117" ordinal="0" sl="117" sc="1" el="117" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="2" uspid="119" ordinal="1" sl="119" sc="1" el="119" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="2" uspid="0" p8:type="SequencePoint" ordinal="14" offset="14" sc="0" sl="117" ec="1" el="119" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="10" visitedSequencePoints="10" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message::.ctor(HexMaster.Email.DomainModels.Sender,System.Collections.Generic.IReadOnlyCollection`1&lt;HexMaster.Email.DomainModels.Recipient&gt;,System.String,System.Collections.Generic.IReadOnlyCollection`1&lt;HexMaster.Email.DomainModels.Body&gt;)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="122" ordinal="0" sl="122" sc="1" el="122" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="4" uspid="123" ordinal="1" sl="123" sc="1" el="123" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="4" uspid="124" ordinal="2" sl="124" sc="1" el="124" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="4" uspid="125" ordinal="3" sl="125" sc="1" el="125" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="4" uspid="126" ordinal="4" sl="126" sc="1" el="126" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="4" uspid="128" ordinal="5" sl="128" sc="1" el="128" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="4" uspid="129" ordinal="6" sl="129" sc="1" el="129" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="4" uspid="130" ordinal="7" sl="130" sc="1" el="130" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="4" uspid="131" ordinal="8" sl="131" sc="1" el="131" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="4" uspid="132" ordinal="9" sl="132" sc="1" el="132" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="10" uspid="0" p8:type="SequencePoint" ordinal="15" offset="15" sc="0" sl="122" ec="1" el="132" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="7" visitedSequencePoints="6" numBranchPoints="4" visitedBranchPoints="2" sequenceCoverage="85.71" branchCoverage="50" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>HexMaster.Email.DomainModels.Message/&lt;FromStreamAsync&gt;d__25</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="4" nPathComplexity="4" sequenceCoverage="85.71" branchCoverage="50" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="7" visitedSequencePoints="6" numBranchPoints="4" visitedBranchPoints="2" sequenceCoverage="85.71" branchCoverage="50" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message/&lt;FromStreamAsync&gt;d__25::MoveNext()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="101" ordinal="0" sl="101" sc="1" el="101" ec="2" bec="4" bev="2" fileid="10" />
+                <SequencePoint vc="1" uspid="103" ordinal="1" sl="103" sc="1" el="103" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="104" ordinal="2" sl="104" sc="1" el="104" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="105" ordinal="3" sl="105" sc="1" el="105" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="106" ordinal="4" sl="106" sc="1" el="106" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="109" ordinal="5" sl="109" sc="1" el="109" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="110" ordinal="6" sl="110" sc="1" el="110" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="101" ordinal="0" path="0" offset="21" offsetend="26" sl="101" fileid="10" />
+                <BranchPoint vc="1" uspid="101" ordinal="2" path="0" offset="37" offsetend="42" sl="101" fileid="10" />
+                <BranchPoint vc="0" uspid="101" ordinal="1" path="1" offset="21" offsetend="203" sl="101" fileid="10" />
+                <BranchPoint vc="0" uspid="101" ordinal="3" path="1" offset="37" offsetend="203" sl="101" fileid="10" />
+              </BranchPoints>
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="101" ec="1" el="110" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>HexMaster.Email.DomainModels.Message/&lt;SerializeToStreamAsync&gt;d__23</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Message/&lt;SerializeToStreamAsync&gt;d__23::MoveNext()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="79" ordinal="0" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="80" ordinal="1" sl="80" sc="1" el="80" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="81" ordinal="2" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="83" ordinal="3" sl="83" sc="1" el="83" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="84" ordinal="4" sl="84" sc="1" el="84" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="85" ordinal="5" sl="85" sc="1" el="85" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="86" ordinal="6" sl="86" sc="1" el="86" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="87" ordinal="7" sl="87" sc="1" el="87" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="79" ec="1" el="87" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="51" visitedSequencePoints="37" numBranchPoints="12" visitedBranchPoints="7" sequenceCoverage="72.54" branchCoverage="58.33" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="12" numMethods="17" />
+          <FullName>HexMaster.Email.DomainModels.Recipient</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Recipient::get_Name()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="15" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Recipient::get_EmailAddress()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="32" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="15" ec="1" el="15" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 HexMaster.Email.DomainModels.Recipient::get_Attempts()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="16" ec="1" el="16" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean HexMaster.Email.DomainModels.Recipient::get_IsCompleted()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="17" ec="1" el="17" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean HexMaster.Email.DomainModels.Recipient::get_IsFailed()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="18" ec="1" el="18" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Recipient::get_LatestError()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="19" ec="1" el="19" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IReadOnlyCollection`1&lt;HexMaster.Email.DomainModels.Substitution&gt; HexMaster.Email.DomainModels.Recipient::get_Substitutions()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="20" ec="1" el="20" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Recipient::SetEmailAddress(System.String)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="24" uspid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="2" bev="2" fileid="11" />
+                <SequencePoint vc="6" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="18" uspid="29" ordinal="2" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="18" uspid="30" ordinal="3" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="6" uspid="24" ordinal="0" path="0" offset="11" offsetend="13" sl="24" fileid="11" />
+                <BranchPoint vc="18" uspid="24" ordinal="1" path="1" offset="11" offsetend="21" sl="24" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="24" ec="1" el="30" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Recipient::SetName(System.String)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="9" uspid="34" ordinal="0" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="9" uspid="35" ordinal="1" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="2" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="34" ec="1" el="35" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Recipient::AddSubstitution(System.String,System.String)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="39" ordinal="0" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="40" ordinal="1" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="9" offset="9" sc="0" sl="39" ec="1" el="40" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Recipient::AddSubstitution(HexMaster.Email.DomainModels.Substitution)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="44" ordinal="0" sl="44" sc="1" el="44" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="46" ordinal="1" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="49" ordinal="2" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="50" ordinal="3" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="44" ordinal="0" path="0" offset="36" offsetend="38" sl="44" fileid="11" />
+                <BranchPoint vc="0" uspid="44" ordinal="1" path="1" offset="36" offsetend="55" sl="44" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="10" offset="10" sc="0" sl="44" ec="1" el="50" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Recipient::SetError(System.String)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="54" ordinal="0" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="55" ordinal="1" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="11" offset="11" sc="0" sl="54" ec="1" el="55" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Recipient::Attempt()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="59" ordinal="0" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="60" ordinal="1" sl="60" sc="1" el="60" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="62" ordinal="2" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="64" ordinal="3" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="60" ordinal="0" path="0" offset="23" offsetend="25" sl="60" fileid="11" />
+                <BranchPoint vc="0" uspid="60" ordinal="1" path="1" offset="23" offsetend="32" sl="60" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="12" offset="12" sc="0" sl="59" ec="1" el="64" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Recipient::Completed()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="68" ordinal="0" sl="68" sc="1" el="68" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="69" ordinal="1" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="13" offset="13" sc="0" sl="68" ec="1" el="69" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="4" nPathComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>HexMaster.Email.DomainModels.Recipient HexMaster.Email.DomainModels.Recipient::Create(System.String,System.String,System.Collections.Generic.Dictionary`2&lt;System.String,System.String&gt;)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="15" uspid="97" ordinal="0" sl="97" sc="1" el="97" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="9" uspid="98" ordinal="1" sl="98" sc="1" el="98" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="9" uspid="99" ordinal="2" sl="99" sc="1" el="99" ec="2" bec="2" bev="2" fileid="11" />
+                <SequencePoint vc="9" uspid="100" ordinal="3" sl="100" sc="1" el="100" ec="2" bec="2" bev="2" fileid="11" />
+                <SequencePoint vc="9" uspid="101" ordinal="4" sl="101" sc="1" el="101" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="9" uspid="102" ordinal="5" sl="102" sc="1" el="102" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="8" uspid="99" ordinal="0" path="0" offset="16" offsetend="18" sl="99" fileid="11" />
+                <BranchPoint vc="9" uspid="99" ordinal="1" path="1" offset="16" offsetend="20" sl="99" fileid="11" />
+                <BranchPoint vc="6" uspid="100" ordinal="2" path="0" offset="27" offsetend="29" sl="100" fileid="11" />
+                <BranchPoint vc="9" uspid="100" ordinal="3" path="1" offset="27" offsetend="35" sl="100" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="14" offset="14" sc="0" sl="97" ec="1" el="102" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Recipient::.ctor(System.String)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="15" uspid="71" ordinal="0" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="15" uspid="73" ordinal="1" sl="73" sc="1" el="73" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="15" uspid="74" ordinal="2" sl="74" sc="1" el="74" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="9" uspid="75" ordinal="3" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="15" offset="15" sc="0" sl="71" ec="1" el="75" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="50" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="14" visitedSequencePoints="14" numBranchPoints="2" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="50" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Recipient::.ctor(System.String,System.String,System.Collections.Generic.IReadOnlyCollection`1&lt;HexMaster.Email.DomainModels.Substitution&gt;,System.Int32,System.Boolean,System.Boolean)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="78" ordinal="0" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="79" ordinal="1" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="80" ordinal="2" sl="80" sc="1" el="80" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="81" ordinal="3" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="82" ordinal="4" sl="82" sc="1" el="82" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="83" ordinal="5" sl="83" sc="1" el="83" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="84" ordinal="6" sl="84" sc="1" el="84" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="86" ordinal="7" sl="86" sc="1" el="86" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="87" ordinal="8" sl="87" sc="1" el="87" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="88" ordinal="9" sl="88" sc="1" el="88" ec="2" bec="2" bev="1" fileid="11" />
+                <SequencePoint vc="3" uspid="89" ordinal="10" sl="89" sc="1" el="89" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="90" ordinal="11" sl="90" sc="1" el="90" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="91" ordinal="12" sl="91" sc="1" el="91" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="3" uspid="92" ordinal="13" sl="92" sc="1" el="92" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="88" ordinal="0" path="0" offset="22" offsetend="24" sl="88" fileid="11" />
+                <BranchPoint vc="3" uspid="88" ordinal="1" path="1" offset="22" offsetend="31" sl="88" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="14" uspid="0" p8:type="SequencePoint" ordinal="16" offset="16" sc="0" sl="78" ec="1" el="92" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="18" visitedSequencePoints="8" numBranchPoints="6" visitedBranchPoints="2" sequenceCoverage="44.44" branchCoverage="33.33" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="7" />
+          <FullName>HexMaster.Email.DomainModels.Sender</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Sender::get_EmailAddress()</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Sender::get_Name()</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Sender::get_ReplyToAddress()</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="7" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Sender::SetName(System.String)</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="16" ordinal="1" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="15" ec="1" el="16" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Sender::SetEmailAddress(System.String)</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="2" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="22" ordinal="1" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="25" ordinal="2" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="26" ordinal="3" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="20" ordinal="0" path="0" offset="11" offsetend="13" sl="20" fileid="12" />
+                <BranchPoint vc="0" uspid="20" ordinal="1" path="1" offset="11" offsetend="21" sl="20" fileid="12" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="20" ec="1" el="26" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Sender::SetReplyToAddress(System.String)</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="30" ordinal="0" sl="30" sc="1" el="30" ec="2" bec="2" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="32" ordinal="1" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="35" ordinal="2" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="36" ordinal="3" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="30" ordinal="0" path="0" offset="11" offsetend="13" sl="30" fileid="12" />
+                <BranchPoint vc="0" uspid="30" ordinal="1" path="1" offset="11" offsetend="21" sl="30" fileid="12" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="30" ec="1" el="36" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Sender::.ctor(System.String,System.String,System.String)</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="39" ordinal="0" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="5" uspid="41" ordinal="1" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="5" uspid="42" ordinal="2" sl="42" sc="1" el="42" ec="2" bec="2" bev="2" fileid="12" />
+                <SequencePoint vc="5" uspid="43" ordinal="3" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="5" uspid="44" ordinal="4" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="3" uspid="42" ordinal="0" path="0" offset="16" offsetend="18" sl="42" fileid="12" />
+                <BranchPoint vc="5" uspid="42" ordinal="1" path="1" offset="16" offsetend="20" sl="42" fileid="12" />
+              </BranchPoints>
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="39" ec="1" el="44" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="4" />
+          <FullName>HexMaster.Email.DomainModels.Substitution</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Substitution::get_Key()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="7" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.DomainModels.Substitution::get_Value()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="7" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.List`1&lt;HexMaster.Email.DomainModels.Substitution&gt; HexMaster.Email.DomainModels.Substitution::FromDictionary(System.Collections.Generic.Dictionary`2&lt;System.String,System.String&gt;)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="9" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="4" uspid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="9" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="13" ec="1" el="15" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.DomainModels.Substitution::.ctor(System.String,System.String)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="10" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="10" uspid="20" ordinal="1" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="10" uspid="21" ordinal="2" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="10" uspid="22" ordinal="3" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="18" ec="1" el="22" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="5" />
+          <FullName>HexMaster.Email.Configuration.EmailOptions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.Configuration.EmailOptions::get_SmtpHost()</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Nullable`1&lt;System.Int32&gt; HexMaster.Email.Configuration.EmailOptions::get_SmtpPort()</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Nullable`1&lt;System.Boolean&gt; HexMaster.Email.Configuration.EmailOptions::get_UseSsl()</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.Configuration.EmailOptions::get_Username()</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String HexMaster.Email.Configuration.EmailOptions::get_Password()</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>HexMaster.Email.Configuration.ServiceCollectionExtensions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void HexMaster.Email.Configuration.ServiceCollectionExtensions::ConfigureEmailService(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)</Name>
+              <FileRef uid="15" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="15" />
+                <SequencePoint vc="0" uspid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="15" />
+                <SequencePoint vc="0" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="15" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="13" ec="1" el="15" bec="0" bev="0" fileid="15" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

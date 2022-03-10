@@ -2,6 +2,7 @@
 
 namespace HexMaster.Email.Exceptions
 {
+    [Serializable]
     public class InvalidEmailAddressException : Exception
     {
         internal InvalidEmailAddressException(string emailAddress, Exception? inner = null) : base(

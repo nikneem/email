@@ -43,7 +43,7 @@ namespace HexMaster.Email.DomainModels
         {
             if (_substitutions.Any(x => x.Key.Equals(value.Key, StringComparison.InvariantCultureIgnoreCase)))
             {
-                throw new Exception("error");
+                throw new SubstitutionAlreadyExistsException(value.Key);
             }
 
             _substitutions.Add(value);
